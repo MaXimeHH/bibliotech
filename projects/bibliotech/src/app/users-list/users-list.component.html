@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>picocss sign in page with image</title>
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@1.*/css/pico.min.css">
+</head>
+
+<body>
+<main class="container">
+    <article class="grid">
+        <div>
+            <hgroup>
+                <h1>Connexion..</h1>
+                <h2>Entrez vos informations de connexion</h2>
+            </hgroup>
+            <form>
+                <input type="email" name="Email" placeholder="Email" aria-label="Login" autocomplete="nickname"
+                       required>
+                <input type="password" name="password" placeholder="Password" aria-label="Password"
+                       autocomplete="current-password" required>
+                <fieldset>
+                    <label for="remember">
+                        <input type="checkbox" role="switch" id="remember" name="remember">
+                        Se souvenir de moi
+                    </label>
+                </fieldset>
+                <button type="submit" class="contrast">Connexion</button>
+            </form>
+        </div>
+        <div>
+            <img src="https://www.carnets-de-traverse.com/blog/wp-content/uploads/2018/07/05-Blog-Voyage-Etats-Unis-Baltimore-Bibliotheque-George-Peabody.jpg" alt="no image">
+        </div>
+    </article>
+</main>
+</body>
+
+</html>
