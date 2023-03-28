@@ -20,7 +20,7 @@ import { LivreService } from './livre.service';
           <li><a href="#">Auteur</a></li>
           <li><a href="#">Link</a></li>
           <li><a href="#">Link</a></li>
-          <li><a href="#" role="button">Connexion</a></li>
+          <li><a href="users" role="button">Connexion</a></li>
         </ul>
       </nav>
     </article>
