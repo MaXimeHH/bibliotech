@@ -10,13 +10,17 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { LivreComponent } from './livre/livre.component';
 import { ApiDataService } from './api-data.service';
+import { UserEditComponent } from './user-edit/user-edit.component';
+import { UsersListComponent } from './users-list/users-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LivreListComponent,
     LivreAddComponent,
-    LivreComponent
+    LivreComponent,
+    UserEditComponent,
+    UsersListComponent
   ],
   imports: [
     BrowserModule,
