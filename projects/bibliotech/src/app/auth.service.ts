@@ -15,23 +15,18 @@ export class AuthService {
     return !!this.currentUser;
   }
 
-  // Authentifier un utilisateur
+  // Authentifier un utilisateur (simulation)
   login(email: string, password: string): void {
     // Remplacer cette logique par une authentification avec une API RESTful qui renvoie un jeton d'authentification valide
-    fetch('http://mon-api.com/authenticate', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({ email, password })
-    })
-      .then(response => response.json())
-      .then(data => {
-        const user = new User(data.id, data.email, data.password, data.role);
-        // Stocker localement le jeton d'authentification reçu
-        this.currentUser = user;
-      })
-      .catch(error => console.error(error));
+    const fakeApiResponse = {
+      id: 1,
+      email: 'utilisateur@test.com',
+      password: 'motdepassesecret',
+      role: 'admin'
+    };
+    const user = new User(fakeApiResponse.id, fakeApiResponse.email, fakeApiResponse.password, fakeApiResponse.role);
+    // Stocker localement le jeton d'authentification reçu (simulation)
+    this.currentUser = user;
   }
 
   // Déconnecter un utilisateur
